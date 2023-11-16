@@ -6,19 +6,21 @@
     
 }
 
-body {
-    background-color: $color1;
-}
-
 .btn2 {
     background-color: $color2;
 }
 
+.btn2:hover {
+    background-color: $color4;
+}
+
+body {
+    background-color: $color1;
+}
+
 .listtext {
     span {
-        font-weight: bold;
         font-size: larger;
-
     }
 }
 
@@ -26,6 +28,3 @@ body {
     background-color: $color3;
 }
 
-.btn2:hover {
-    background-color: $color4;
-}

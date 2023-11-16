@@ -3,7 +3,23 @@
   padding: 0px;
 }
 
-.iconh {
-  height: 30px;
-  width: 30px;
+body {
+  background-color: #D0E7D2;
+}
+
+.btn2 {
+  background-color: #B0D9B1;
+}
+
+.listtext span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.taskbox {
+  background-color: #79AC78;
+}
+
+.btn2:hover {
+  background-color: #618264;
 }/*# sourceMappingURL=style.css.map */

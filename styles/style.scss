@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'mixins';
 
 * {
     margin: 0px;
@@ -7,8 +6,26 @@
     
 }
 
+body {
+    background-color: $color1;
+}
 
-.iconh {
-    height: 30px;
-    width: 30px;
+.btn2 {
+    background-color: $color2;
+}
+
+.listtext {
+    span {
+        font-weight: bold;
+        font-size: larger;
+
+    }
+}
+
+.taskbox {
+    background-color: $color3;
+}
+
+.btn2:hover {
+    background-color: $color4;
 }

@@ -1,6 +1,20 @@
 
 let tasks = [];
 
+function salvarDados() {
+  localStorage.setItem('listaTarefas', JSON.stringify(tasks));
+}
+
+function carregarDados() {
+  const dadosSalvos = localStorage.getItem('listaTarefas');
+  if (dadosSalvos) {
+    tasks = JSON.parse(dadosSalvos);
+    renderTasks();
+  }
+}
+
+window.addEventListener('load', carregarDados);
+
 document.getElementById('addTask').addEventListener('click', () => {
   const newTaskText = document.getElementById('newTask').value.trim();
   if (newTaskText !== '') {
@@ -8,8 +22,16 @@ document.getElementById('addTask').addEventListener('click', () => {
     tasks.push(task);
     renderTasks();
     document.getElementById('newTask').value = '';
+
+    salvarDados();
   }
 });
+
+function removeTask(index) {
+  tasks.splice(index, 1);
+  renderTasks();
+  salvarDados();
+}
 
 function removeTask(index) {
   tasks.splice(index, 1);

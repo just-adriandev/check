@@ -2,8 +2,11 @@
 
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
+}
+
+body {
+    background-color: $color1;
 }
 
 .btn2 {
@@ -12,10 +15,6 @@
 
 .btn2:hover {
     background-color: $color4;
-}
-
-body {
-    background-color: $color1;
 }
 
 .listtext {

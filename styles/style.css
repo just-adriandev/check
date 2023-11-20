@@ -3,16 +3,16 @@
   padding: 0px;
 }
 
+body {
+  background-color: #D0E7D2;
+}
+
 .btn2 {
   background-color: #B0D9B1;
 }
 
 .btn2:hover {
   background-color: #618264;
-}
-
-body {
-  background-color: #D0E7D2;
 }
 
 .listtext span {

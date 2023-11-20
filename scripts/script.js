@@ -1,4 +1,3 @@
-// seu-arquivo-javascript.js
 
 let tasks = [];
 
@@ -64,3 +63,12 @@ function renderTasks() {
 }
 
 renderTasks();
+
+document.getElementById('newTask').addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') {
+    
+    event.preventDefault();
+
+    document.getElementById('addTask').click();
+  }
+});

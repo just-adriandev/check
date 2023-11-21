@@ -33,10 +33,6 @@ function removeTask(index) {
   salvarDados();
 }
 
-function removeTask(index) {
-  tasks.splice(index, 1);
-  renderTasks();
-}
 
 function toggleCompleted(index) {
   tasks[index].completed = !tasks[index].completed;
@@ -53,9 +49,11 @@ function renderTasks() {
 
     const taskText = document.createElement('span');
     taskText.textContent = task.text;
-    taskText.style.color = task.color;
     if (task.completed) {
       taskText.style.textDecoration = 'line-through';
+      taskText.style.textDecorationColor = 'white'; 
+      taskText.style.textDecorationThickness = '3px';
+      salvarDados();
     }
 
     const buttonsContainer = document.createElement('div');

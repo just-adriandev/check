@@ -7,10 +7,12 @@
 
 body {
     background-color: $color1;
+
 }
 
 .btn2 {
     background-color: $color2;
+    
 }
 
 .btn2:hover {
@@ -26,3 +28,14 @@ body {
 .taskbox {
     background-color: $color3;
 }
+
+.task {
+    max-height: 4rem; 
+    overflow-y: auto;
+    word-wrap: break-word;
+    margin-bottom: 6px;
+}
+
+.font{    
+    font-family: "Puritan", sans-serif;  
+}  

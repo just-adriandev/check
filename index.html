@@ -8,23 +8,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="icons and images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>CHECK</title>
 
 </head>
 
-<body>
+<body class="font">
 
 <!-- navbar start -->
 
     <nav>
         <div class="flex flex-row">
 
-            <div class="p-3 basis-1/2"><img class="rounded-md" src="icons and images/logo 2.png" alt="Check Logo"></div>
+            <div class="p-3 basis-1/2"><img class="rounded-3xl" src="icons and images/logo 2.png" alt="Check Logo"></div>
 
             <div class="basis-1/2 p-2 flex justify-end">
 
-                <div> <button name="button" type="button" class="rounded-lg btn2 p-2 m-2"> <a href=""> <h2> Buy me a coffe </h2></a> </button> 
-                </div> <button name="button" type="button" class="rounded-lg btn2 p-2 m-2"> <a href="https://adriankjk3.github.io/portfolio/"><h2> About </h2></a> </button> 
+                </div> <button name="button" class="w-24 rounded-lg btn2 p-2 m-2"> <a href="https://adriankjk3.github.io/portfolio/"><h2>About Me</h2></a></button> 
             
             </div>
         
@@ -35,15 +37,15 @@
 
 <!-- main start -->
 
-    <div class="justify-center taskbox m-3 p-3 mx-auto md:w-4/5 sm:w-screen h-auto">
+    <div class="justify-center rounded-lg taskbox m-3 p-3 mx-auto md:max-w-4xl sm:w-screen h-auto">
 
         <div>
 
-            <div class="flex justify-center"><h1 class="text-2xl font-bold mb-4">My Tasks</h1></div>
+            <div class="flex justify-center"><h1 class="text-2xl mp-5 mb-5">TASKS</h1></div>
         
-            <div class="flex mb-4">
-              <input type="text" id="newTask" class="w-full px-2 py-1 border rounded-l-md h-16" placeholder="Add a new task">
-              <button id="addTask" class="btn2 px-4 py-1 rounded-r-md">New Task</button>
+            <div class="flex mb-10">
+              <input type="text" id="newTask" class="w-full px-2 py-1 border rounded-l-md h-16" placeholder="Type new task here...">
+              <button id="addTask" class="btn2 px-4 py-1 rounded-r-md">Create Task</button>
             </div>
         
             <div class="listtext" id="taskList">

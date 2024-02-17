@@ -45,12 +45,13 @@ function renderTasks() {
 
   tasks.forEach((task, index) => {
     const listItem = document.createElement('div');
-    listItem.classList.add('flex', 'justify-between', 'items-center', 'mb-2');
+    listItem.classList.add('flex', 'justify-between', 'items-center', 'mb-8');
 
     const taskText = document.createElement('span');
     taskText.textContent = task.text;
     if (task.completed) {
       taskText.style.textDecoration = 'line-through';
+      taskText.style.opacity = '0.5';
       taskText.style.textDecorationColor = 'white'; 
       taskText.style.textDecorationThickness = '3px';
       salvarDados();
@@ -73,12 +74,20 @@ function renderTasks() {
       removeTask(index);
     });
 
+    
     buttonsContainer.appendChild(completedButton);
+    
     buttonsContainer.appendChild(removeButton);
-
     listItem.appendChild(taskText);
     listItem.appendChild(buttonsContainer);
+
+    if (index > 0) { 
+      listItem.classList.add('taskWithBorder');
+    }
+
     taskList.appendChild(listItem);
+    
+
   });
 }
 

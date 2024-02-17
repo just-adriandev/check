@@ -21,4 +21,15 @@ body {
 
 .taskbox {
   background-color: #79AC78;
+}
+
+.task {
+  max-height: 4rem;
+  overflow-y: auto;
+  word-wrap: break-word;
+  margin-bottom: 6px;
+}
+
+.font {
+  font-family: "Puritan", sans-serif;
 }/*# sourceMappingURL=style.css.map */
